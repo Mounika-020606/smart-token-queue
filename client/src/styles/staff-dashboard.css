@@ -1,0 +1,634 @@
+* {
+  box-sizing: border-box;
+}
+
+.staff-dashboard {
+  min-height: 100vh;
+  background: #f7f7ff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #151515;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.staff-navbar {
+  height: 75px;
+  background: white;
+  padding: 0 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.staff-logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #6046e8;
+
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.staff-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.staff-welcome {
+  color: #555;
+  font-weight: 600;
+}
+
+.staff-logout {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  text-decoration: none;
+
+  color: #555;
+
+  font-weight: 600;
+}
+
+.staff-logout:hover {
+  color: #6046e8;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.staff-content {
+  width: 90%;
+  max-width: 1400px;
+
+  margin: auto;
+
+  padding: 45px 0;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.staff-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 35px;
+}
+
+.staff-label {
+  color: #6046e8;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin: 0 0 10px;
+}
+
+.staff-header h1 {
+  margin: 0;
+
+  font-size: 42px;
+}
+
+.staff-header p:last-child {
+  color: #777;
+
+  font-size: 18px;
+
+  margin-top: 10px;
+}
+
+.staff-live {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: #e8fff2;
+
+  color: #079b4d;
+
+  padding: 14px 25px;
+
+  border-radius: 30px;
+
+  font-weight: 700;
+}
+
+.staff-live span {
+  width: 11px;
+  height: 11px;
+
+  border-radius: 50%;
+
+  background: #14c96b;
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.staff-stats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 22px;
+
+  margin-bottom: 35px;
+}
+
+.staff-stat {
+  min-height: 125px;
+
+  border-radius: 20px;
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 25px;
+}
+
+.staff-stat.purple {
+  background: linear-gradient(
+    135deg,
+    #7444f5,
+    #5b35df
+  );
+}
+
+.staff-stat.blue {
+  background: linear-gradient(
+    135deg,
+    #3987f5,
+    #2672e8
+  );
+}
+
+.staff-stat.cyan {
+  background: linear-gradient(
+    135deg,
+    #1dbdca,
+    #10a9b7
+  );
+}
+
+.staff-stat.pink {
+  background: linear-gradient(
+    135deg,
+    #e84ca6,
+    #d93291
+  );
+}
+
+.staff-stat-icon {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 17px;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.staff-stat p {
+  margin: 0 0 7px;
+
+  font-size: 16px;
+}
+
+.staff-stat h2 {
+  margin: 0;
+
+  font-size: 28px;
+}
+
+
+/* =========================
+   MAIN GRID
+========================= */
+
+.staff-main-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 25px;
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================
+   CURRENT SERVICE
+========================= */
+
+.current-service {
+  background: white;
+
+  border-radius: 25px;
+
+  padding: 32px;
+
+  box-shadow:
+    0 10px 35px rgba(50, 50, 100, 0.07);
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small-title {
+  color: #6046e8;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin: 0 0 8px;
+}
+
+.service-header h2 {
+  margin: 0;
+
+  font-size: 26px;
+}
+
+.service-icon {
+  color: #6046e8;
+}
+
+.current-token {
+  text-align: center;
+
+  font-size: 72px;
+
+  font-weight: 800;
+
+  color: #6046e8;
+
+  margin: 30px 0 5px;
+}
+
+.customer-service {
+  text-align: center;
+
+  color: #666;
+
+  font-size: 17px;
+}
+
+.service-actions {
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 30px;
+}
+
+.service-actions button {
+  flex: 1;
+
+  border: none;
+
+  border-radius: 12px;
+
+  padding: 15px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+}
+
+.call-next-btn {
+  background: linear-gradient(
+    135deg,
+    #6046e8,
+    #2878f5
+  );
+
+  color: white;
+}
+
+.complete-btn {
+  background: #e9fff2;
+
+  color: #079b4d;
+}
+
+.service-actions button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   WAITING QUEUE
+========================= */
+
+.waiting-card {
+  background: white;
+
+  border-radius: 25px;
+
+  padding: 32px;
+
+  box-shadow:
+    0 10px 35px rgba(50, 50, 100, 0.07);
+}
+
+.waiting-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.waiting-header h2 {
+  margin: 0;
+
+  font-size: 26px;
+}
+
+.queue-count {
+  background: #eeeaff;
+
+  color: #6046e8;
+
+  padding: 10px 15px;
+
+  border-radius: 20px;
+
+  font-weight: 700;
+}
+
+.token-list {
+  margin-top: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.waiting-token {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 18px;
+
+  background: #f7f7fb;
+
+  border-radius: 12px;
+}
+
+.waiting-token span {
+  font-size: 18px;
+
+  font-weight: 700;
+}
+
+.waiting-token small {
+  color: #777;
+}
+
+.active-token {
+  background: #eeeaff;
+
+  color: #6046e8;
+}
+
+
+/* =========================
+   INFO
+========================= */
+
+.staff-info {
+  background: linear-gradient(
+    135deg,
+    #6046e8,
+    #2878f5
+  );
+
+  color: white;
+
+  border-radius: 22px;
+
+  padding: 28px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.info-icon {
+  width: 65px;
+  height: 65px;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.staff-info .small-title {
+  color: #dcd6ff;
+}
+
+.staff-info h2 {
+  margin: 0 0 8px;
+}
+
+.staff-info p:last-child {
+  margin: 0;
+
+  color: #eeeeff;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.staff-footer {
+  background: white;
+
+  padding: 25px 7%;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  color: #777;
+}
+
+.staff-footer div {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #6046e8;
+
+  font-weight: 700;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+  .staff-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .staff-main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .staff-content {
+    width: 92%;
+  }
+
+  .staff-navbar {
+    padding: 0 4%;
+  }
+
+  .staff-welcome {
+    display: none;
+  }
+
+  .staff-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .staff-header h1 {
+    font-size: 32px;
+  }
+
+  .staff-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .service-actions {
+    flex-direction: column;
+  }
+
+  .staff-footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* Additional controls for live queue management */
+
+.staff-refresh-btn:hover,
+.call-next-btn:hover:not(:disabled),
+.complete-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  filter: brightness(1.04);
+}
+
+.staff-refresh-btn:disabled,
+.call-next-btn:disabled,
+.complete-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.call-next-btn:disabled,
+.complete-btn:disabled {
+  filter: grayscale(0.15);
+}
+
+.staff-logout {
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.staff-logout:focus-visible,
+.staff-refresh-btn:focus-visible,
+.service-actions button:focus-visible,
+.waiting-card button:focus-visible {
+  outline: 3px solid #b9adff;
+  outline-offset: 3px;
+}
+
+.waiting-token button:hover:not(:disabled) {
+  background: #ffd4df !important;
+}
+
+.waiting-token button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.staff-info {
+  margin-top: 10px;
+}
+
+@media (max-width: 650px) {
+  .staff-refresh-btn {
+    min-height: 44px;
+  }
+
+  .current-token {
+    font-size: 52px;
+    overflow-wrap: anywhere;
+  }
+}

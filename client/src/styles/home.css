@@ -1,0 +1,479 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.home {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6246ea, #2575fc);
+  color: white;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  width: calc(100% - 110px);
+  margin: 30px auto 0;
+  padding: 22px 35px;
+  background: white;
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo span {
+  font-size: 23px;
+  font-weight: 700;
+  color: #6246ea;
+}
+
+.logo svg {
+  color: #6246ea;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #6246ea;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #2575fc;
+}
+
+.login-btn {
+  padding: 11px 22px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6246ea, #2575fc);
+  color: white !important;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  width: calc(100% - 110px);
+  margin: 80px auto 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #ffffff;
+}
+
+.hero-content > p {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 650px;
+}
+
+/* ================= HERO BUTTONS ================= */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 28px;
+}
+
+.primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 14px 22px;
+  border-radius: 12px;
+
+  background: white;
+  color: #6246ea;
+
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 22px;
+  border-radius: 12px;
+
+  border: 2px solid white;
+  color: white;
+
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.secondary-btn:hover {
+  background: white;
+  color: #6246ea;
+}
+
+/* ================= QUEUE PREVIEW ================= */
+
+.queue-preview {
+  width: 420px;
+  flex-shrink: 0;
+
+  background: white;
+  color: #222;
+
+  padding: 30px;
+  border-radius: 25px;
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+.preview-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.preview-header p {
+  margin-bottom: 5px;
+  color: #777;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.preview-header h3 {
+  font-size: 21px;
+}
+
+.live {
+  color: #18b76a;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* ================= CURRENT TOKEN ================= */
+
+.current-token {
+  text-align: center;
+  background: #f4f1ff;
+  padding: 25px;
+  border-radius: 18px;
+}
+
+.current-token p {
+  color: #777;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.current-token h2 {
+  margin: 8px 0;
+  font-size: 46px;
+  color: #6246ea;
+}
+
+.current-token span {
+  color: #555;
+}
+
+/* ================= QUEUE INFO ================= */
+
+.queue-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.queue-info > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 15px;
+  border-radius: 14px;
+
+  background: #f7f7fb;
+}
+
+.queue-info svg {
+  color: #6246ea;
+  flex-shrink: 0;
+}
+
+.queue-info span {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  color: #777;
+  font-size: 12px;
+}
+
+.queue-info b {
+  color: #222;
+  font-size: 16px;
+}
+
+/* ================= FEATURES ================= */
+
+.features {
+  width: calc(100% - 110px);
+  margin: 0 auto 80px;
+}
+
+.section-title {
+  margin-bottom: 25px;
+}
+
+.section-title p {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.section-title h2 {
+  margin: 5px 0;
+  font-size: 32px;
+}
+
+.section-title span {
+  font-size: 16px;
+}
+
+/* ================= FEATURE CARDS ================= */
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.feature-card {
+  min-height: 165px;
+  padding: 25px;
+  border-radius: 20px;
+
+  color: white;
+
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card svg {
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.feature-card p {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.feature-card.purple {
+  background: #7c4dff;
+}
+
+.feature-card.blue {
+  background: #2498e8;
+}
+
+.feature-card.cyan {
+  background: #08b8c8;
+}
+
+.feature-card.pink {
+  background: #ff3d78;
+}
+
+/* ================= HOW IT WORKS ================= */
+
+.how-it-works {
+  width: calc(100% - 110px);
+  margin: 0 auto 80px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.step {
+  background: white;
+  color: #222;
+
+  padding: 25px;
+  border-radius: 20px;
+
+  min-height: 180px;
+}
+
+.step-number {
+  color: #6246ea;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.step h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.step p {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  background: rgba(0, 0, 0, 0.15);
+
+  padding: 30px 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+  .hero {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .queue-preview {
+    width: 100%;
+  }
+
+  .feature-grid,
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+
+  .navbar {
+    width: calc(100% - 30px);
+    padding: 18px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .hero,
+  .features,
+  .how-it-works {
+    width: calc(100% - 30px);
+  }
+
+  .hero {
+    margin-top: 50px;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+  }
+
+  .feature-grid,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
